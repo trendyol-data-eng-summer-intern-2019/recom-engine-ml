@@ -21,15 +21,13 @@ import java.io.Serializable;
 public class Main {
 
     public static void main(String[] args) {
-        String reviewPath = null;
-        String modelPath = null;
-        if (args.length == 2) {
-            reviewPath = args[0];
-            modelPath = args[1];
-        } else {
+        if (args.length != 2) {
             System.out.println("Expected arguments: <review-path> <model-path>");
             System.exit(0);
         }
+        
+        String reviewPath = args[0];
+        String modelPath = args[1];
 
         SparkSession spark = SparkSession
                 .builder()
