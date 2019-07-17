@@ -62,7 +62,6 @@ public class Main {
 
     /**
      * Loads the reviews from the specified path into a Dataframe.
-     *
      * @param sparkSession  SparkSession object.
      * @param directoryPath The path of the directory which has stored review data.
      * @return A Dataframe that contains user reviews.
@@ -78,7 +77,6 @@ public class Main {
 
     /**
      * Calculates the root mean square error of the model that is produced.
-     *
      * @param reviewData The data that has score value in it.
      * @param alsModel   The model that is to be evaluated.
      * @return Root mean square error of the model.
@@ -103,7 +101,6 @@ public class Main {
 
         /**
          * Initializes the member fields.
-         *
          * @param userId    is the user's id whose reviews.
          * @param productId is the product's id whose is reviewed.
          * @param score     is the score that the user give to the product. It's an integer between 1 and 5.
@@ -118,7 +115,6 @@ public class Main {
 
         /**
          * Parses the review data and returns a Review object.
-         *
          * @param str The review data that is separated by "::" with this format: userId::productId::score::timestamp
          * @return Parsed review.
          */
