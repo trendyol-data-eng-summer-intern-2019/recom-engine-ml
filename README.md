@@ -1,4 +1,4 @@
-# Recommender Engine - ML Component
+# Recommendation Engine - ML Component
 
 ## Description
 This repository contains the machine learning component of the recommender engine. The component is written using Apache Spark.
